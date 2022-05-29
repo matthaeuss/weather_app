@@ -8,9 +8,7 @@ button.addEventListener("click", () => {
   const currentVal = search.value;
 
   ft.getCurrent(currentVal).then((data) => {
-    //call a UI method//
     ui.populateUI(data);
-    //call saveToLS
     ui.saveToLS(data);
   });
 });
